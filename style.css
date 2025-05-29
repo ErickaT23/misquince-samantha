@@ -320,24 +320,18 @@ body {
     font-style: italic;
 }
 #nombreInvitado.fondo-nombre {
-    background-color: var(--color-2); /* Puedes cambiar por el color que prefieras */
+    background-color:rgba(200, 145, 124, 0.483);
     color: white;
-    padding: 8px 12px;
-    border-radius: 8px;
-    display: inline-block;
-    font-weight: 600;
-    font-style: italic;
+    padding: 10px;
+    margin-bottom: 0;
 }
 
 #cantidadPases.fondo-pases {
-    background-color: var(--color-1); /* Otro color diferente para contraste */
+    background-color: rgba(200, 145, 124, 0.585);
     color: white;
-    padding: 8px 12px;
-    border-radius: 8px;
-    display: inline-block;
-    font-weight: 600;
-    font-style: italic;
-    margin-top: 8px;
+    padding: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 /*section div2*/
@@ -368,12 +362,13 @@ body {
 .section-b{
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 370px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    margin-bottom:0;
 }
 .section-b p{
     font-family: var(--font-text);
