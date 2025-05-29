@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Función para obtener datos de invitados (sin inputs)
+import { invitados } from './invitados.js';  // Ajusta la ruta según tu estructura de archivos
 function cargarDatosInvitado() {
     const params = new URLSearchParams(window.location.search);
     const invitadoId = params.get('id');
@@ -47,13 +48,6 @@ function cargarDatosInvitado() {
         alert('ID de invitado no encontrado en el enlace.');
         return;
     }
-
-    // Base de datos simulada
-    const invitados = {
-        '1': { nombre: 'Ana Pérez', pases: 3 },
-        '2': { nombre: 'Luis García', pases: 2 },
-        '3': { nombre: 'María López', pases: 4 }
-    };
 
     const invitado = invitados[invitadoId];
 
@@ -64,6 +58,7 @@ function cargarDatosInvitado() {
         alert('Invitado no encontrado.');
     }
 }
+
 
 // Función para iniciar el contador de la fecha del evento
 function iniciarContador() {
