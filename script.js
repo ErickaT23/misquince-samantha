@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Función para obtener datos de invitados (sin inputs)
 import { invitados } from './invitados.js';  // Ajusta la ruta según tu estructura de archivos
+
 function cargarDatosInvitado() {
     const params = new URLSearchParams(window.location.search);
     const invitadoId = params.get('id');
@@ -52,12 +53,20 @@ function cargarDatosInvitado() {
     const invitado = invitados[invitadoId];
 
     if (invitado) {
-        document.getElementById('nombreInvitado').innerText = invitado.nombre;
-        document.getElementById('cantidadPases').innerText = `Pases: ${invitado.pases}`;
+        const nombreEl = document.getElementById('nombreInvitado');
+        const pasesEl = document.getElementById('cantidadPases');
+
+        nombreEl.innerText = `¡${invitado.nombre}!`;
+        pasesEl.innerText = `¡Invitación válida para ${invitado.pases}!`;
+
+        // Agregar clase para estilos de fondo
+        nombreEl.classList.add('fondo-nombre');
+        pasesEl.classList.add('fondo-pases');
     } else {
         alert('Invitado no encontrado.');
     }
 }
+
 
 
 // Función para iniciar el contador de la fecha del evento

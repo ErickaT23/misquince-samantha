@@ -319,6 +319,27 @@ body {
     font-weight: 400;
     font-style: italic;
 }
+#nombreInvitado.fondo-nombre {
+    background-color: var(--color-2); /* Puedes cambiar por el color que prefieras */
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    display: inline-block;
+    font-weight: 600;
+    font-style: italic;
+}
+
+#cantidadPases.fondo-pases {
+    background-color: var(--color-1); /* Otro color diferente para contraste */
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    display: inline-block;
+    font-weight: 600;
+    font-style: italic;
+    margin-top: 8px;
+}
+
 /*section div2*/
 .section-cerezo{
     position: relative;
