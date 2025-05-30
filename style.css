@@ -60,22 +60,25 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 145px;
-    height: 145px;
-    background-color: rgb(200 145 124);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.216);
-    border-radius: 50%;
+    height: 245px;
+    width: 250px;
+    background-image: url('/imagenes/SEAL-2.png ');
+    background-size: contain; /* Ajusta para que el marco no se corte */
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     transition: opacity 1s ease-in-out;
-    z-index: 11; /* El círculo rosa encima de la rosa */
-}
+    z-index: 11;
+    text-align: center;
+  }
+
 /* Texto dentro del sello */
 #seal h2 {
     margin: 0;
-    background: linear-gradient(to right, #ffac00, #d4af37, #ffd700, #d4af37, #ffac00);
+    background: linear-gradient(to right, #ffcc00, #d4af37, #ffd700, #d4af37, #ffcc00);
     -webkit-background-clip: text;
     color: transparent;
     animation: shine 1.5s infinite linear;
@@ -84,7 +87,7 @@ body {
     font-style: italic;
     z-index: 12; /* Texto encima de todo */
     position: relative;
-    font-size: 25px;
+    font-size: 33px;
 }
 #invitacion {
     display: none;
