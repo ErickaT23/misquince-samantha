@@ -62,7 +62,7 @@ body {
     transform: translate(-50%, -50%);
     height: 245px;
     width: 250px;
-    background-image: url('/imagenes/SEAL-2.png ');
+    background-image: url('/imagenes/SELLO.png');
     background-size: contain; /* Ajusta para que el marco no se corte */
     background-position: center;
     background-repeat: no-repeat;
@@ -87,7 +87,8 @@ body {
     font-style: italic;
     z-index: 12; /* Texto encima de todo */
     position: relative;
-    font-size: 33px;
+    font-size: 34px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.19);
 }
 #invitacion {
     display: none;
@@ -221,7 +222,7 @@ body {
 /*dorado*/
 
 .section-countdown h1, p, .countdown-circle span, .section-music h2, .section-quote h1{
-    background: linear-gradient(to right, #b29a68, #d4af37, #ffd700, #d4af37, #b29a68);
+    background: linear-gradient(to right, #b29a68, #d4af37, #dbbc0c, #d4af37, #b29a68);
     -webkit-background-clip: text;
     color: transparent;
     animation: shine 1.5s infinite linear;
@@ -379,7 +380,7 @@ body {
     font-weight: 400;
     font-size: 28px;
     margin-top: -60px;
-    background: linear-gradient(to right, #b29a68, #d4af37, #ffd700, #d4af37, #b29a68);
+    background: linear-gradient(to right, #b29a68, #d4af37, #dbbc0c, #d4af37, #b29a68);
     -webkit-background-clip: text;
     color: transparent;
     animation: shine 1.5s infinite linear;
