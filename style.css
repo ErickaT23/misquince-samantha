@@ -62,7 +62,7 @@ body {
     transform: translate(-50%, -50%);
     height: 245px;
     width: 250px;
-    background-image: url('/imagenes/SELLO.png');
+    background-image: url('/imagenes/sello\ \(1\).png');
     background-size: contain; /* Ajusta para que el marco no se corte */
     background-position: center;
     background-repeat: no-repeat;
@@ -78,7 +78,7 @@ body {
 /* Texto dentro del sello */
 #seal h2 {
     margin: 0;
-    background: linear-gradient(to right, #ffcc00, #d4af37, #ffd700, #d4af37, #ffcc00);
+    background: linear-gradient(to right, #ffd52c, #ffe9a4, #ffe55c, #ffe9a4, #ffd52c);
     -webkit-background-clip: text;
     color: transparent;
     animation: shine 1.5s infinite linear;
@@ -87,7 +87,7 @@ body {
     font-style: italic;
     z-index: 12; /* Texto encima de todo */
     position: relative;
-    font-size: 34px;
+    font-size: 33px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.19);
 }
 #invitacion {
