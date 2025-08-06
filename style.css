@@ -64,7 +64,7 @@ body {
     transform: translate(-50%, -50%);
     height: 245px;
     width: 250px;
-    background-image: url('/imagenes/sello\ \(1\).png');
+    background-image: url('/imagenes/seal.png');
     background-size: contain; /* Ajusta para que el marco no se corte */
     background-position: center;
     background-repeat: no-repeat;
@@ -855,6 +855,9 @@ footer {
 .fade-in-element.visible {
     opacity: 1;
     transform: translateY(0);
+}
+.fade-in-element {
+    will-change: opacity, transform;
 }
 
 
