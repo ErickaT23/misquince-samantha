@@ -57,7 +57,27 @@ function cargarDatosInvitado() {
         const pasesEl = document.getElementById('cantidadPases');
 
         nombreEl.innerText = `¡${invitado.nombre}!`;
-        pasesEl.innerText = `¡Invitación válida para ${invitado.pases}!`;
+
+        const adultos = invitado.adultos || 0;
+        const ninos = invitado.ninos || 0;
+
+    let mensaje = '¡Invitación válida para ';
+
+    if (adultos > 0) {
+        mensaje += `${adultos} adulto${adultos > 1 ? 's' : ''}`;
+        }
+
+    if (adultos > 0 && ninos > 0) {
+    mensaje += ' y ';
+    }
+
+    if (ninos > 0) {
+    mensaje += `${ninos} niño${ninos > 1 ? 's' : ''}`;
+    }  
+
+    mensaje += '!';
+
+    pasesEl.innerText = mensaje;
 
         // Agregar clase para estilos de fondo
         nombreEl.classList.add('fondo-nombre');
@@ -137,8 +157,8 @@ function confirmarAsistencia() {
     const invitado = "Ana Pérez"; 
     const pases = 3; 
 
-    const mensaje = `Hola, soy ${invitado} y confirmo mi asistencia con ${pases} pases para los quince de Samantha. ¡Gracias por la invitacion! 🎉`;
-    const numeroTelefono = '50254678462';
+    const mensaje = `Hola, soy ${invitado} y confirmo mi asistencia con ${pases} pases para los quince de Samantha. ¡Gracias por la invitacion!`;
+    const numeroTelefono = '50257349677';
 
     const enlaceWhatsapp = `https://api.whatsapp.com/send?phone=${numeroTelefono}&text=${encodeURIComponent(mensaje)}`;
     window.open(enlaceWhatsapp, '_blank');
@@ -146,8 +166,8 @@ function confirmarAsistencia() {
 
 // Función para abrir Waze o Google Maps
 function elegirAplicacion() {
-    const enlaceGoogleMaps = 'https://maps.app.goo.gl/6KAojytokogfTN827'; // reemplaza por la dirección correcta
-    const enlaceWaze = 'https://waze.com/ul/h9fxdtmyzr';
+    const enlaceGoogleMaps = 'https://maps.app.goo.gl/Bp7AQmDEtjdAZhDE9'; // reemplaza por la dirección correcta
+    const enlaceWaze = 'https://ul.waze.com/ul?venue_id=176619667.1766196666.469363&overview=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location';
 
     window.open(enlaceGoogleMaps, '_blank');
     setTimeout(() => {

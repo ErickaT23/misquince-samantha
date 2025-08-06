@@ -1,6 +1,8 @@
 :root {
-    --color-1:rgb(191, 136, 115);
-    --color-2: rgb(200 145 124);
+    --color-1: #4c447d;
+    --color-2: #7f78a9;
+    --color-5:rgb(191, 136, 115);
+    --color-6: rgb(200 145 124);
     --color-3:#003366;
     --color-4:#F5F5F5;
     --font-title:"Great Vibes", serif;
@@ -324,14 +326,14 @@ body {
     font-style: italic;
 }
 #nombreInvitado.fondo-nombre {
-    background-color:rgba(200, 145, 124, 0.483);
+    background-color:#a896c7;
     color: white;
     padding: 10px;
     margin-bottom: 0;
 }
 
 #cantidadPases.fondo-pases {
-    background-color: rgba(200, 145, 124, 0.585);
+    background-color: #8f7faa;
     color: white;
     padding: 10px;
     margin-bottom: 0;
@@ -603,7 +605,7 @@ button:hover {
 /*footer*/
 footer {
     padding: 20px;
-    background:rgb(200 145 124);
+    background:#7f78a9;
     color: white;
     font-size: var(--footer-font-size);
     width: 100%;
