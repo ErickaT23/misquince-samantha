@@ -174,7 +174,7 @@ function confirmarAsistencia() {
         detallePases += (detallePases ? ' y ' : '') + `${ninos} niño${ninos > 1 ? 's' : ''}`;
     }
 
-    const mensaje = `Hola, soy ${invitado.nombre} y confirmo mi asistencia con ${detallePases} para los quince de Samantha. ¡Gracias por la invitación!`;
+    const mensaje = `Hola, soy ${invitado.nombre} y confirmo mi asistencia de ${detallePases} para los quince de Samantha. ¡Gracias por la invitación!`;
     const numeroTelefono = '50257349677';
 
     const enlaceWhatsapp = `https://api.whatsapp.com/send?phone=${numeroTelefono}&text=${encodeURIComponent(mensaje)}`;
