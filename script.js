@@ -154,15 +154,33 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Función para confirmar la asistencia
 function confirmarAsistencia() {
-    const invitado = "Ana Pérez"; 
-    const pases = 3; 
+    const params = new URLSearchParams(window.location.search);
+    const invitadoId = params.get('id');
 
-    const mensaje = `Hola, soy ${invitado} y confirmo mi asistencia con ${pases} pases para los quince de Samantha. ¡Gracias por la invitacion!`;
+    if (!invitadoId || !invitados[invitadoId]) {
+        alert('No se encontró la información del invitado.');
+        return;
+    }
+
+    const invitado = invitados[invitadoId];
+    const adultos = invitado.adultos || 0;
+    const ninos = invitado.ninos || 0;
+
+    let detallePases = '';
+    if (adultos > 0) {
+        detallePases += `${adultos} adulto${adultos > 1 ? 's' : ''}`;
+    }
+    if (ninos > 0) {
+        detallePases += (detallePases ? ' y ' : '') + `${ninos} niño${ninos > 1 ? 's' : ''}`;
+    }
+
+    const mensaje = `Hola, soy ${invitado.nombre} y confirmo mi asistencia con ${detallePases} para los quince de Samantha. ¡Gracias por la invitación! 🎉`;
     const numeroTelefono = '50257349677';
 
     const enlaceWhatsapp = `https://api.whatsapp.com/send?phone=${numeroTelefono}&text=${encodeURIComponent(mensaje)}`;
     window.open(enlaceWhatsapp, '_blank');
 }
+
 
 // Función para abrir Waze o Google Maps
 function elegirAplicacion() {
