@@ -57,7 +57,7 @@ export const invitados = {
   '55': { nombre: 'Rodrigo Rojas', adultos: 1, ninos: 0 },
   '56': { nombre: 'Estaban Toralla', adultos: 1, ninos: 0 },
   '57': { nombre: 'Luciana', adultos: 1, ninos: 0 },
-  '58': { nombre: 'Sacarlett Culajay', adultos: 1, ninos: 0 },
+  '58': { nombre: 'Scarlett Culajay', adultos: 1, ninos: 0 },
   '59': { nombre: 'Paula Culajay', adultos: 1, ninos: 0 },
   '60': { nombre: 'Isa Garcia', adultos: 1, ninos: 0 },
   '61': { nombre: 'Krista Lorenzo', adultos: 1, ninos: 0 },
