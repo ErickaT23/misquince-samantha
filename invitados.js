@@ -75,6 +75,7 @@ export const invitados = {
   '73': { nombre: 'Samuel Castellanos', adultos: 2, ninos: 0 },
   '74': { nombre: 'Martin Rivera', adultos: 1, ninos: 0 },
   '75': { nombre: 'Aron Guevara', adultos: 1, ninos: 0 },
+  '76': { nombre: 'Karen Alvarado', adultos: 2, ninos: 0 }
 };
 
   
